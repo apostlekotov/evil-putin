@@ -12,6 +12,10 @@
     font-family: "Gotham Pro", sans-serif;
   }
 
+  .countdown-text {
+    font-family: "Handjet", sans-serif;
+  }
+
   #__next {
     @apply min-h-screen overflow-x-hidden;
   }
