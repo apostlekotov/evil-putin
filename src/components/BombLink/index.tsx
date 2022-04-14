@@ -23,7 +23,7 @@ export const BombLink: React.FC<Props> = ({
       <span className='uppercase text-lg font-bold absolute left-0 right-0 top-1/2 -translate-y-1/2 pl-[104px] pr-[52px] mx-auto'>
         {children}
       </span>
-      <Image src={BombImage} alt='bomb' className='-z-10' />
+      <Image src={BombImage} alt='bomb' className='-z-10' priority />
     </a>
   </Link>
 );

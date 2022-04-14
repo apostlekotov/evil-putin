@@ -8,7 +8,12 @@ export const Metahero: React.FC = () => (
     className='flex flex-col-reverse lg:flex-row items-center mt-16'
   >
     <div className='pr-4 -mb-2 h-[90vw] lg:h-auto overflow-hidden lg:pr-0 lg:max-w-3xl relative'>
-      <Image src={HandImage} objectFit='contain' alt='huilo' />
+      <Image
+        src={HandImage}
+        objectFit='contain'
+        alt='huilo'
+        placeholder='blur'
+      />
     </div>
 
     <div className='flex flex-col px-8 max-w-xl mx-auto'>
