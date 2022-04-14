@@ -54,7 +54,11 @@ export const Header: React.FC = () => {
           className={`block md:hidden ${open ? "open" : ""}`}
           id='toggler'
           onClick={toggle}
-        ></div>
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
 
         <nav
           className={`flex flex-col space-y-8 text-center font-bold text-2xl leading-6 md:leading-8 fixed px-12 md:px-0 w-full md:w-auto top-36 md:top-1/2 md:-translate-y-1/2 left-1/2 -translate-x-1/2 md:space-y-0 md:flex md:flex-row md:text-lg md:opacity-100 md:space-x-4 lg:space-x-9 md:pointer-events-auto md:absolute transition ease-out delay-200 z-10 ${
