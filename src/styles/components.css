@@ -1,0 +1,50 @@
+@layer components {
+  #toggler {
+    width: 28px;
+    height: 22px;
+    position: relative;
+    cursor: pointer;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      height: 3px;
+      width: 100%;
+      background: #ededed;
+      border-radius: 16px;
+      transform: rotate(0deg);
+      transition: 0.2s ease-in-out;
+    }
+
+    &::before {
+      top: 0px;
+    }
+
+    &::after {
+      top: 9px;
+      width: 70%;
+      left: 30%;
+    }
+
+    &.open::before {
+      top: 9px;
+      transform: rotate(135deg);
+    }
+
+    &.open::after {
+      top: 9px;
+      width: 100%;
+      left: 0;
+      transform: rotate(-135deg);
+    }
+  }
+
+  .answer {
+    &.open {
+      @apply h-auto opacity-100 mt-6;
+    }
+
+    @apply font-normal max-w-xl opacity-0 h-0 mt-0 leading-loose transition-[opacity,height,margin] ease-in-out duration-500;
+  }
+}
