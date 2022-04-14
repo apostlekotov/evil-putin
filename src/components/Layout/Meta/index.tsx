@@ -3,15 +3,15 @@ import Head from "next/head";
 export const Meta: React.FC = () => (
   <Head>
     <meta property='og:type' content='website' />
-    {/* <meta property='og:url' content='https://' /> */}
+    <meta property='og:url' content='https://www.evilputin.io' />
     {/* <meta property='og:image' content='/img/evil-putin-thumbnail.webp' /> */}
-    {/* <meta property='og:title' content='Evil Putin™' /> */}
+    <meta property='og:title' content='Evil Putin™' />
     {/* <meta property='og:description' content='' /> */}
     {/* <meta property='og:site_name' content='Evil Putin™' /> */}
     <meta property='twitter:card' content='summary' />
-    {/* <meta property='twitter:site' content='@' /> */}
+    <meta property='twitter:site' content='@_EvilPutin' />
     {/* <meta property='twitter:image' content='/img/evil-putin-thumbnail.webp' /> */}
-    {/* <meta property='twitter:title' content='Evil Putin™' /> */}
+    <meta property='twitter:title' content='Evil Putin™' />
     {/* <meta property='twitter:description' content='' /> */}
 
     {/* <meta name='description' content='' /> */}
