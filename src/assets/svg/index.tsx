@@ -1,4 +1,3 @@
-import LogoIcon from "@/public/svg/logo.svg";
 import CircleIcon from "@/public/svg/circle.svg";
 
 // Socials
@@ -12,4 +11,4 @@ export const socialIcons: { [x: string]: JSX.Element } = {
   twitter: <TwitterIcon />,
 };
 
-export { LogoIcon, CircleIcon };
+export { CircleIcon };

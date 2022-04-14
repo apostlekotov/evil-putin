@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { LogoIcon } from "@/assets/svg";
+import { LogoImage } from "@/assets/img";
 import { Links } from "@/components/Links";
 import { useToggle } from "@/hooks/useToggle";
 import { links } from "@/data/links";
+import Image from "next/image";
 
 export const Header: React.FC = () => {
   const [open, toggle, setOpen] = useToggle();
@@ -38,7 +39,7 @@ export const Header: React.FC = () => {
         <div>
           <Link href='/'>
             <a className='block h-full'>
-              <LogoIcon />
+              <Image src={LogoImage} alt='evil putin logo' priority />
             </a>
           </Link>
         </div>
