@@ -22,11 +22,11 @@ const Home: NextPage = () => (
 
     <Hero />
     <Metahero />
-    <Marquee />
+    <Marquee>Support Ukraine</Marquee>
     <AboutWar />
     <AboutUs />
     <Character />
-    <Marquee />
+    {/* <Marquee>Stop Russian Aggression</Marquee> */}
     <Metaverse />
     <Roadmap />
     <FAQ />
