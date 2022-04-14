@@ -1,5 +1,5 @@
 import { HandImage } from "@/assets/img";
-import { BombLink } from "@/components/BombLink";
+import { NukeLink } from "@/components/NukeLink";
 import Image from "next/image";
 
 export const Metahero: React.FC = () => (
@@ -37,9 +37,9 @@ export const Metahero: React.FC = () => (
         that You can get by supporting Ukraine.
       </p>
 
-      <BombLink className='flex self-start -ml-10 lg:ml-0 lg:self-end' href='/'>
+      <NukeLink className='flex self-start -ml-10 lg:ml-0 lg:self-end' href='/'>
         More Info
-      </BombLink>
+      </NukeLink>
     </div>
   </section>
 );
