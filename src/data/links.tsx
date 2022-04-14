@@ -2,7 +2,7 @@ import { LinkType } from "types";
 
 export const links: LinkType[] = [
   {
-    url: "https://instagram.com/",
+    url: "https://www.instagram.com/_evilputin/",
     label: "instagram",
   },
   {
@@ -10,7 +10,7 @@ export const links: LinkType[] = [
     label: "discord",
   },
   {
-    url: "https://twitter.com/",
+    url: "https://twitter.com/_EvilPutin",
     label: "twitter",
   },
 ];
