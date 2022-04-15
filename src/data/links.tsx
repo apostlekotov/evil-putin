@@ -6,7 +6,7 @@ export const links: LinkType[] = [
     label: "instagram",
   },
   {
-    url: "https://discord.gg/",
+    url: "https://discord.gg/2KhR6jgq",
     label: "discord",
   },
   {
