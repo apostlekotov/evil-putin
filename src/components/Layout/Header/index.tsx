@@ -101,7 +101,7 @@ export const Header: React.FC = () => {
               : "opacity-0 pointer-events-none"
           }`}
         >
-          <Links links={links} />
+          <Links links={links} className="w-10 h-10" />
         </div>
       </div>
     </header>
