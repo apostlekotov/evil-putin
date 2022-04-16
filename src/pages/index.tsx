@@ -26,7 +26,7 @@ const Home: NextPage = () => (
     <AboutWar />
     <AboutUs />
     <Character />
-    {/* <Marquee>Stop Russian Aggression</Marquee> */}
+    <Marquee>Stop Russian Aggression</Marquee>
     <Metaverse />
     <Roadmap />
     <FAQ />
