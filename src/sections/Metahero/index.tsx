@@ -1,13 +1,13 @@
-import { HandImage } from "@/assets/img";
-import { NukeLink } from "@/components/NukeLink";
 import Image from "next/image";
+import { NukeLink } from "@/components/NukeLink";
+import { HandImage } from "@/assets/img";
 
 export const Metahero: React.FC = () => (
   <section
     id='metahero'
     className='flex flex-col-reverse lg:flex-row items-center mt-16'
   >
-    <div className='pr-4 -mb-2 h-[90vw] lg:h-auto overflow-hidden lg:pr-0 lg:max-w-3xl relative'>
+    <div className='pr-4 -mb-2 mt-auto lg:h-auto overflow-hidden lg:pr-0 max-w-3xl self-start lg:max-w-3xl relative'>
       <Image
         src={HandImage}
         objectFit='contain'
