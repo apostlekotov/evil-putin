@@ -12,7 +12,8 @@ export const Hero: React.FC = () => (
       className='-z-20'
       objectFit='cover'
       layout='fill'
-      placeholder='blur'
+      quality={100}
+      priority
     />
 
     <Countdown />
