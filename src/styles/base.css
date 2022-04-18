@@ -17,6 +17,6 @@
   }
 
   #__next {
-    @apply min-h-screen overflow-x-hidden;
+    @apply min-h-screen;
   }
 }

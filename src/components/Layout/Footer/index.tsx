@@ -5,8 +5,8 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const Footer: React.FC = () => (
-  <footer className='flex flex-col-reverse items-start px-8 mt-8 md:mt-16 relative w-full 2xl:max-w-screen-2xl mx-auto justify-between'>
-    <div className='w-[170%] h-56 md:w-full md:contents -ml-40 md:-mr-0'>
+  <footer className='flex flex-col-reverse items-start px-8 mt-8 md:mt-16 relative w-full 2xl:max-w-screen-2xl mx-auto justify-between overflow-x-hidden'>
+    <div className='w-[170%] md:w-full md:contents -ml-40 md:-mr-0'>
       <Image src={FooterBGImage} alt='footer' />
     </div>
 
