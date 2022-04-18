@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export const Footer: React.FC = () => (
   <footer className='flex flex-col-reverse items-start px-8 mt-8 md:mt-16 relative w-full 2xl:max-w-screen-2xl mx-auto justify-between overflow-x-hidden'>
-    <div className='w-[170%] md:w-full md:contents -ml-40 md:-mr-0'>
+    <div className='w-[170%] md:w-full md:contents scale-110 -ml-40 md:-mr-0'>
       <Image src={FooterBGImage} alt='footer' />
     </div>
 
