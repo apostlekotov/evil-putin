@@ -8,7 +8,7 @@ export const Countdown: React.FC = () => {
     <div className='flex justify-center flex-wrap sm:flex-nowrap absolute bottom-16 w-full gap-y-6 gap-x-16 md:gap-0 md:space-x-20'>
       <div className='flex flex-col justify-center text-center text-black relative w-24 h-24 md:w-40 md:h-40 py-3 md:py-6'>
         <span className='countdown-text text-4xl md:text-7xl md:mb-1'>
-          {remaining.days}
+          {("0" + remaining.days).slice(-2)}
         </span>
         <span className='text-sm md:text-lg uppercase'>Days</span>
 
@@ -16,7 +16,7 @@ export const Countdown: React.FC = () => {
       </div>
       <div className='flex flex-col justify-center text-center text-black relative w-24 h-24 md:w-40 md:h-40 py-3 md:py-6'>
         <span className='countdown-text text-4xl md:text-7xl md:mb-1'>
-          {remaining.hours}
+          {("0" + remaining.hours).slice(-2)}
         </span>
         <span className='text-sm md:text-lg uppercase'>Hours</span>
 
@@ -24,7 +24,7 @@ export const Countdown: React.FC = () => {
       </div>
       <div className='flex flex-col justify-center text-center text-black relative w-24 h-24 md:w-40 md:h-40 py-3 md:py-6'>
         <span className='countdown-text text-4xl md:text-7xl md:mb-1'>
-          {remaining.minutes}
+          {("0" + remaining.minutes).slice(-2)}
         </span>
         <span className='text-sm md:text-lg uppercase'>Minutes</span>
 
@@ -32,7 +32,7 @@ export const Countdown: React.FC = () => {
       </div>
       <div className='flex flex-col justify-center text-center text-black relative w-24 h-24 md:w-40 md:h-40 py-3 md:py-6'>
         <span className='countdown-text text-4xl md:text-7xl md:mb-1'>
-          {remaining.seconds}
+          {("0" + remaining.seconds).slice(-2)}
         </span>
         <span className='text-sm md:text-lg uppercase'>Seconds</span>
 
