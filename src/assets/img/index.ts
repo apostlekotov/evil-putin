@@ -9,6 +9,8 @@ import HornyHuiloImage from "@/public/img/horny-huilo.png";
 import Matr1Image from "@/public/img/matr1.png";
 import Matr2Image from "@/public/img/matr2.png";
 import Matr3Image from "@/public/img/matr3.png";
+import RoadmapBGImage from "@/public/img/roadmap-bg.png";
+import RescueHuilo from "@/public/img/rescue-huilo.png";
 import FooterBGImage from "@/public/img/footer-bg.png";
 
 export {
@@ -23,5 +25,7 @@ export {
   Matr1Image,
   Matr2Image,
   Matr3Image,
+  RoadmapBGImage,
+  RescueHuilo,
   FooterBGImage,
 };
