@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import { useToggle } from "@/hooks/useToggle";
 import { LogoImage } from "@/assets/img";
 import { Links } from "@/components/Links";
-import { useToggle } from "@/hooks/useToggle";
 import { links } from "@/data/links";
-import Image from "next/image";
 
 export const Header: React.FC = () => {
   const [open, toggle, setOpen] = useToggle();
@@ -68,27 +68,27 @@ export const Header: React.FC = () => {
           }`}
         >
           <Link href='/#metahero'>
-            <a className='uppercase hover:text-[#BEFD37] whitespace-nowrap transition ease-in-out delay-200'>
+            <a className='uppercase hover:text-primary whitespace-nowrap transition ease-in-out delay-200'>
               Metahero
             </a>
           </Link>
           <Link href='/#'>
-            <a className='uppercase hover:text-[#BEFD37] whitespace-nowrap transition ease-in-out delay-200'>
+            <a className='uppercase hover:text-primary whitespace-nowrap transition ease-in-out delay-200'>
               Collection
             </a>
           </Link>
           <Link href='/#roadmap'>
-            <a className='uppercase hover:text-[#BEFD37] whitespace-nowrap transition ease-in-out delay-200'>
+            <a className='uppercase hover:text-primary whitespace-nowrap transition ease-in-out delay-200'>
               Roadmap
             </a>
           </Link>
           <Link href='/#about'>
-            <a className='uppercase hover:text-[#BEFD37] whitespace-nowrap transition ease-in-out delay-200'>
+            <a className='uppercase hover:text-primary whitespace-nowrap transition ease-in-out delay-200'>
               About
             </a>
           </Link>
           <Link href='/#faq'>
-            <a className='uppercase hover:text-[#BEFD37] whitespace-nowrap transition ease-in-out delay-200'>
+            <a className='uppercase hover:text-primary whitespace-nowrap transition ease-in-out delay-200'>
               FAQ
             </a>
           </Link>
@@ -101,7 +101,7 @@ export const Header: React.FC = () => {
               : "opacity-0 pointer-events-none"
           }`}
         >
-          <Links links={links} className="w-10 h-10" />
+          <Links links={links} className='w-10 h-10' />
         </div>
       </div>
     </header>

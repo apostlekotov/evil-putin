@@ -11,7 +11,12 @@ module.exports = {
       xs: "475px",
       ...defaultTheme.screens,
     },
-    extend: {},
+    extend: {
+      colors: {
+        primary: "#BEFD37",
+        secondary: "#BD2222",
+      },
+    },
   },
   plugins: [],
 };
