@@ -4,7 +4,7 @@ import { QuestionItem } from "@/components/Question";
 import { questions } from "@/data/questions";
 
 export const FAQ: React.FC = () => (
-  <section className='flex flex-col mx-auto py-20 xs:py-0 my-20 relative overflow-x-clip'>
+  <section className='flex flex-col mx-auto py-20 xs:py-0 mt-28 xs:mb-12 md:mb-40 relative overflow-x-clip'>
     <div className='flex justify-center w-[42rem] sm:w-[56rem] sm:max-w-none lg:w-full lg:max-w-6xl absolute top-0 left-0 lg:left-1/2 -translate-x-[45%] sm:-translate-x-[40%] lg:-translate-x-1/2 -translate-y-[5.5rem] -z-0'>
       <Image src={RescueHuilo} alt='rescue huilo' />
     </div>
