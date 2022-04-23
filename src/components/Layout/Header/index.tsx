@@ -11,11 +11,13 @@ import { links } from "@/data/links";
 
 const navLinkAnimation: Variants = {
   hidden: {
+    x: -32,
     opacity: 0,
   },
   visible: (i) => ({
+    x: 0,
     opacity: 1,
-    transition: { delay: i * 0.1 },
+    transition: { delay: i * 0.15, ease: "easeInOut" },
   }),
 };
 
@@ -25,7 +27,7 @@ export const Header: React.FC = () => {
 
   const windowWidth = useWindowWidth()!;
   const initialNavbar = useMemo(
-    () => (windowWidth < 640 ? "hidden" : "visible"),
+    () => (windowWidth < 767 ? "hidden" : "visible"),
     [windowWidth]
   );
 
@@ -45,11 +47,9 @@ export const Header: React.FC = () => {
   }, []);
 
   return (
-    <motion.header
-      initial='visible'
-      animate={open ? "visible" : initialNavbar}
+    <header
       className={`opacity-100 fixed w-full top-0 left-0 right-0 transition-[background-color,backdrop-filter,height,padding] ease-in-out delay-200 z-10
-      ${open ? "h-full" : small ? "h-[96px] md:h-[144px] xl:h-[160px]" : "h-0"} 
+      ${open ? "h-full" : small ? "h-[96px] lg:h-[144px] xl:h-[160px]" : "h-0"} 
       ${small || open ? "opacity-100 bg-black" : ""}`}
     >
       <div
@@ -62,12 +62,11 @@ export const Header: React.FC = () => {
       >
         <div>
           <Link href='/'>
-            <a className='flex h-12 md:h-20 xl:h-24'>
+            <a className='flex w-[88px] h-12 lg:w-[146px] lg:h-20 xl:w-[175px] xl:h-24'>
               <Image
                 src={LogoImage}
                 alt='evil putin logo'
                 objectFit='contain'
-                objectPosition='left'
                 priority
               />
             </a>
@@ -84,7 +83,8 @@ export const Header: React.FC = () => {
           <span />
         </div>
 
-        <nav
+        <motion.nav
+          animate={open ? "visible" : initialNavbar}
           className={`flex flex-col space-y-10 md:text-center font-bold text-4xl leading-9 md:leading-8 fixed px-8 md:px-0 w-full md:w-auto top-36 md:top-1/2 md:-translate-y-1/2 left-1/2 -translate-x-1/2 md:space-y-0 md:flex md:flex-row md:text-lg md:opacity-100 md:space-x-4 lg:space-x-9 md:pointer-events-auto md:absolute transition ease-out delay-200 z-10 ${
             open
               ? "opacity-100 pointer-events-auto"
@@ -136,12 +136,12 @@ export const Header: React.FC = () => {
               FAQ
             </motion.a>
           </Link>
-        </nav>
+        </motion.nav>
 
-        <div className='hidden md:flex items-center space-x-10 sm:space-x-4 lg:space-x-10 fixed bottom-8 left-1/2 -translate-x-1/2 md:relative md:bottom-0 md:left-auto md:-translate-x-0 transition ease-out delay-200'>
-          <Links links={links} className='w-10 h-10' />
+        <div className='hidden md:flex items-center space-x-4 lg:space-x-10 relative bottom-0 left-auto -translate-x-0 transition ease-out delay-200'>
+          <Links links={links} className='w-6 h-6 lg:w-10 lg:h-10' />
         </div>
       </div>
-    </motion.header>
+    </header>
   );
 };

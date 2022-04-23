@@ -2,7 +2,10 @@ import Image from "next/image";
 import { HornyHuiloImage, SadHuiloImage } from "@/assets/img";
 
 export const AboutUs: React.FC = () => (
-  <section className='flex flex-col relative items-center min-h-screen justify-center overflow-hidden'>
+  <section
+    id='about'
+    className='flex flex-col relative items-center min-h-screen justify-center overflow-hidden'
+  >
     <div className='md:absolute -rotate-90 md:rotate-0 max-w-sm md:max-w-none md:w-[40rem] lg:w-[56rem] right-0 md:right-auto md:left-0 md:-translate-x-[45%] top-0 lg:top-[-10%] self-end -z-10'>
       <Image
         src={HornyHuiloImage}

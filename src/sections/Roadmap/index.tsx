@@ -2,7 +2,7 @@ import Image from "next/image";
 import { RoadmapBGImage } from "@/assets/img";
 
 export const Roadmap: React.FC = () => (
-  <section className='bg-primary text-black'>
+  <section className='bg-primary text-black overflow-clip'>
     <div className='relative h-56 md:min-h-[415px] md:h-auto overflow-x-clip'>
       <div className='absolute overflow-clip inset-0 -z-0'>
         <Image
@@ -14,7 +14,10 @@ export const Roadmap: React.FC = () => (
         />
       </div>
 
-      <div className='flex items-center absolute inset-0 2xl:max-w-screen-2xl mx-auto px-4 md:px-8 2xl:px-0'>
+      <div
+        id='roadmap'
+        className='flex items-center absolute inset-0 2xl:max-w-screen-2xl -mt-28 pt-28 md:-mt-32 md:pt-32 mx-auto px-4 md:px-8 2xl:px-0'
+      >
         <h4 className='uppercase text-8xl font-medium hidden md:block'>
           Roadmap
         </h4>
