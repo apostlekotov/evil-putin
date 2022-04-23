@@ -1,15 +1,33 @@
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import { motion, Variants } from "framer-motion";
 import { useToggle } from "@/hooks/useToggle";
+import { useWindowWidth } from "@/hooks/useWindowWidth";
 import { LogoImage } from "@/assets/img";
 import { Links } from "@/components/Links";
 import { links } from "@/data/links";
 
+const navLinkAnimation: Variants = {
+  hidden: {
+    opacity: 0,
+  },
+  visible: (i) => ({
+    opacity: 1,
+    transition: { delay: i * 0.1 },
+  }),
+};
+
 export const Header: React.FC = () => {
   const [open, toggle, setOpen] = useToggle();
   const [small, setSmall] = useState(false);
+
+  const windowWidth = useWindowWidth()!;
+  const initialNavbar = useMemo(
+    () => (windowWidth < 640 ? "hidden" : "visible"),
+    [windowWidth]
+  );
 
   const router = useRouter();
 
@@ -27,13 +45,15 @@ export const Header: React.FC = () => {
   }, []);
 
   return (
-    <header
-      className={`opacity-100 fixed w-full top-0 left-0 right-0 transition-[background-color,backdrop-filter,height,padding] ease-in-out delay-200 z-10 
-      ${open ? "h-full" : ""} 
-      ${small || open ? "opacity-100 bg-black" : "bg-black/0"}`}
+    <motion.header
+      initial='visible'
+      animate={open ? "visible" : initialNavbar}
+      className={`opacity-100 fixed w-full top-0 left-0 right-0 transition-[background-color,backdrop-filter,height,padding] ease-in-out delay-200 z-10
+      ${open ? "h-full" : small ? "h-[96px] md:h-[144px] xl:h-[160px]" : "h-0"} 
+      ${small || open ? "opacity-100 bg-black" : ""}`}
     >
       <div
-        className={`flex items-center w-full 2xl:max-w-screen-2xl mx-auto justify-between transition-[padding] ease-in-out delay-200 
+        className={`flex items-center relative w-full 2xl:max-w-screen-2xl mx-auto justify-between transition-[padding] ease-in-out delay-200 
         ${
           small && !open
             ? "px-4 xl:px-6 py-6 md:py-8"
@@ -59,42 +79,62 @@ export const Header: React.FC = () => {
           id='toggler'
           onClick={toggle}
         >
-          <span></span>
-          <span></span>
-          <span></span>
+          <span />
+          <span />
+          <span />
         </div>
 
         <nav
-          className={`flex flex-col space-y-12 md:text-center font-bold text-4xl leading-6 md:leading-8 fixed px-8 md:px-0 w-full md:w-auto top-36 md:top-1/2 md:-translate-y-1/2 left-1/2 -translate-x-1/2 md:space-y-0 md:flex md:flex-row md:text-lg md:opacity-100 md:space-x-4 lg:space-x-9 md:pointer-events-auto md:absolute transition ease-out delay-200 z-10 ${
+          className={`flex flex-col space-y-10 md:text-center font-bold text-4xl leading-9 md:leading-8 fixed px-8 md:px-0 w-full md:w-auto top-36 md:top-1/2 md:-translate-y-1/2 left-1/2 -translate-x-1/2 md:space-y-0 md:flex md:flex-row md:text-lg md:opacity-100 md:space-x-4 lg:space-x-9 md:pointer-events-auto md:absolute transition ease-out delay-200 z-10 ${
             open
               ? "opacity-100 pointer-events-auto"
               : "opacity-0 pointer-events-none"
           }`}
         >
-          <Link href='/#metahero'>
-            <a className='uppercase hover:text-primary whitespace-nowrap transition ease-in-out delay-200'>
+          <Link href='/#metahero' passHref>
+            <motion.a
+              custom={1}
+              variants={navLinkAnimation}
+              className='uppercase hover:text-primary whitespace-nowrap transition ease-in-out delay-200'
+            >
               Metahero
-            </a>
+            </motion.a>
           </Link>
-          <Link href='/#'>
-            <a className='uppercase hover:text-primary whitespace-nowrap transition ease-in-out delay-200'>
+          <Link href='/#' passHref>
+            <motion.a
+              custom={2}
+              variants={navLinkAnimation}
+              className='uppercase hover:text-primary whitespace-nowrap transition ease-in-out delay-200'
+            >
               Collection
-            </a>
+            </motion.a>
           </Link>
-          <Link href='/#roadmap'>
-            <a className='uppercase hover:text-primary whitespace-nowrap transition ease-in-out delay-200'>
+          <Link href='/#roadmap' passHref>
+            <motion.a
+              custom={3}
+              variants={navLinkAnimation}
+              className='uppercase hover:text-primary whitespace-nowrap transition ease-in-out delay-200'
+            >
               Roadmap
-            </a>
+            </motion.a>
           </Link>
-          <Link href='/#about'>
-            <a className='uppercase hover:text-primary whitespace-nowrap transition ease-in-out delay-200'>
+          <Link href='/#about' passHref>
+            <motion.a
+              custom={4}
+              variants={navLinkAnimation}
+              className='uppercase hover:text-primary whitespace-nowrap transition ease-in-out delay-200'
+            >
               About
-            </a>
+            </motion.a>
           </Link>
-          <Link href='/#faq'>
-            <a className='uppercase hover:text-primary whitespace-nowrap transition ease-in-out delay-200'>
+          <Link href='/#faq' passHref>
+            <motion.a
+              custom={5}
+              variants={navLinkAnimation}
+              className='uppercase hover:text-primary whitespace-nowrap transition ease-in-out delay-200'
+            >
               FAQ
-            </a>
+            </motion.a>
           </Link>
         </nav>
 
@@ -102,6 +142,6 @@ export const Header: React.FC = () => {
           <Links links={links} className='w-10 h-10' />
         </div>
       </div>
-    </header>
+    </motion.header>
   );
 };
