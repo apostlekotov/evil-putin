@@ -34,7 +34,11 @@ export const Header: React.FC = () => {
     >
       <div
         className={`flex items-center w-full 2xl:max-w-screen-2xl mx-auto justify-between transition-[padding] ease-in-out delay-200 
-        ${small ? "px-4 xl:px-6 py-6 md:py-8" : "px-8 xl:px-8 py-8 md:py-16"}`}
+        ${
+          small && !open
+            ? "px-4 xl:px-6 py-6 md:py-8"
+            : "px-8 xl:px-8 py-8 md:py-16"
+        }`}
       >
         <div>
           <Link href='/'>
@@ -61,7 +65,7 @@ export const Header: React.FC = () => {
         </div>
 
         <nav
-          className={`flex flex-col space-y-8 text-center font-bold text-2xl leading-6 md:leading-8 fixed px-12 md:px-0 w-full md:w-auto top-36 md:top-1/2 md:-translate-y-1/2 left-1/2 -translate-x-1/2 md:space-y-0 md:flex md:flex-row md:text-lg md:opacity-100 md:space-x-4 lg:space-x-9 md:pointer-events-auto md:absolute transition ease-out delay-200 z-10 ${
+          className={`flex flex-col space-y-12 md:text-center font-bold text-4xl leading-6 md:leading-8 fixed px-8 md:px-0 w-full md:w-auto top-36 md:top-1/2 md:-translate-y-1/2 left-1/2 -translate-x-1/2 md:space-y-0 md:flex md:flex-row md:text-lg md:opacity-100 md:space-x-4 lg:space-x-9 md:pointer-events-auto md:absolute transition ease-out delay-200 z-10 ${
             open
               ? "opacity-100 pointer-events-auto"
               : "opacity-0 pointer-events-none"
@@ -94,13 +98,7 @@ export const Header: React.FC = () => {
           </Link>
         </nav>
 
-        <div
-          className={`flex items-center space-x-10 sm:space-x-4 lg:space-x-10 fixed bottom-8 left-1/2 -translate-x-1/2 md:relative md:bottom-0 md:left-auto md:-translate-x-0 md:opacity-100 md:pointer-events-auto transition ease-out delay-200 ${
-            open
-              ? "opacity-100 pointer-events-auto"
-              : "opacity-0 pointer-events-none"
-          }`}
-        >
+        <div className='hidden md:flex items-center space-x-10 sm:space-x-4 lg:space-x-10 fixed bottom-8 left-1/2 -translate-x-1/2 md:relative md:bottom-0 md:left-auto md:-translate-x-0 transition ease-out delay-200'>
           <Links links={links} className='w-10 h-10' />
         </div>
       </div>
