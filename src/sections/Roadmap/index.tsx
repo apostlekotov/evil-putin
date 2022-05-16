@@ -48,74 +48,141 @@ export const Roadmap: React.FC = () => (
         ipsum, in.
       </p>
 
-      <div className='flex flex-col md:flex-row justify-start space-y-12 md:space-y-0 md:space-x-12 mt-16'>
-        <div className='grid grid-cols-2 grid-rows-2 gap-6 md:gap-12 mb-auto'>
-          <div className='flex flex-col space-y-3 md:space-y-6'>
-            <span className='uppercase text-3xl md:text-4xl font-medium'>
-              57
+      <div className='flex flex-col lg:flex-row justify-start gap-12 mt-16'>
+        <div className='grid grid-cols-2 grid-rows-2 gap-6 lg:gap-12 mb-auto'>
+          <div className='flex flex-col space-y-3 lg:space-y-6'>
+            <span className='uppercase text-2xl md:text-3xl font-medium'>
+              Birth
             </span>
-            <p className='text-sm md:text-lg max-w-sm'>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. At
-              faucibus nibh faucibus aenean montes, id. Nunc nunc a vitae
-              sollicitudin. Eu eget tellus quam eget. Velit magnis amet tellus
-              senectus venenatis, tortor ipsum, in.
-            </p>
+            <ul className='text-sm md:text-lg space-y-1 max-w-xs'>
+              <li className="flex gap-1">
+                <span>01.</span> Team expansion
+              </li>
+              <li className="flex gap-1">
+                <span>02.</span> Material Building
+              </li>
+              <li className="flex gap-1">
+                <span>03.</span> EvilPutin NFT Creation
+              </li>
+              <li className="flex gap-1">
+                <span>04.</span> Website creation
+              </li>
+              <li className="flex gap-1">
+                <span>05.</span> Marketing strategy development
+              </li>
+              <li className="flex gap-1">
+                <span>06.</span> Partnership plan development
+              </li>
+            </ul>
           </div>
-          <div className='flex flex-col space-y-3 md:space-y-6'>
-            <span className='uppercase text-3xl md:text-4xl font-medium'>
-              20000+
+          <div className='flex flex-col space-y-3 lg:space-y-6'>
+            <span className='uppercase text-2xl md:text-3xl font-medium'>
+              Childhood
             </span>
-            <p className='text-sm md:text-lg max-w-sm'>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. At
-              faucibus nibh faucibus aenean montes, id. Nunc nunc a vitae
-              sollicitudin. Eu eget tellus quam eget. Velit magnis amet tellus
-              senectus venenatis, tortor ipsum, in.
-            </p>
+            <ul className='text-sm md:text-lg space-y-1 max-w-xs'>
+              <li className="flex gap-1">
+                <span>01.</span> Social media establishment
+              </li>
+              <li className="flex gap-1">
+                <span>02.</span> Marketing efforts
+              </li>
+              <li className="flex gap-1">
+                <span>03.</span> Establishing partners
+              </li>
+              <li className="flex gap-1">
+                <span>04.</span> Website launch
+              </li>
+              <li className="flex gap-1">
+                <span>05.</span> EvilPutin NFT Mint
+              </li>
+              <li className="flex gap-1">
+                <span>06.</span> Donation to Ukraine
+              </li>
+            </ul>
           </div>
-          <div className='flex flex-col space-y-3 md:space-y-6'>
-            <span className='uppercase text-3xl md:text-4xl font-medium'>
-              58
+          <div className='flex flex-col space-y-3 lg:space-y-6'>
+            <span className='uppercase text-2xl md:text-3xl font-medium'>
+              Years in the KGB
             </span>
-            <p className='text-sm md:text-lg max-w-sm'>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. At
-              faucibus nibh faucibus aenean montes, id. Nunc nunc a vitae
-              sollicitudin. Eu eget tellus quam eget. Velit magnis amet tellus
-              senectus venenatis, tortor ipsum, in.
-            </p>
+            <ul className='text-sm md:text-lg space-y-1 max-w-xs'>
+              <li className="flex gap-1">
+                <span>01.</span> 1st Serum Airdrop
+              </li>
+              <li className="flex gap-1">
+                <span>02.</span> Comic Development begins
+              </li>
+              <li className="flex gap-1">
+                <span>03.</span> Partnership Expansion
+              </li>
+              <li className="flex gap-1">
+                <span>04.</span> 2nd Serum Drop
+              </li>
+              <li className="flex gap-1">
+                <span>05.</span> Metaverse Parcel Purchase for the community 
+              </li>
+              <li className="flex gap-1">
+                <span>06.</span> Website V2.0
+              </li>
+            </ul>
           </div>
-          <div className='flex flex-col space-y-3 md:space-y-6'>
-            <span className='uppercase text-3xl md:text-4xl font-medium'>
-              2000+
+          <div className='flex flex-col space-y-3 lg:space-y-6'>
+            <span className='uppercase text-2xl md:text-3xl font-medium'>
+              Becoming President
             </span>
-            <p className='text-sm md:text-lg max-w-sm'>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. At
-              faucibus nibh faucibus aenean montes, id. Nunc nunc a vitae
-              sollicitudin. Eu eget tellus quam eget. Velit magnis amet tellus
-              senectus venenatis, tortor ipsum, in.
-            </p>
+            <ul className='text-sm md:text-lg space-y-1 max-w-xs'>
+              <li className="flex gap-1">
+                <span>01.</span> 3rd Serum Drop
+              </li>
+              <li className="flex gap-1">
+                <span>02.</span> Comic launch
+              </li>
+              <li className="flex gap-1">
+                <span>03.</span> Community Live Events
+              </li>
+              <li className="flex gap-1">
+                <span>04.</span> 4th and Last Serum Drop
+              </li>
+              <li className="flex gap-1">
+                <span>05.</span> Start of game development
+              </li>
+            </ul>
           </div>
         </div>
 
-        <div className='flex flex-col space-y-3 md:space-y-6'>
-          <span className='uppercase text-3xl md:text-4xl font-medium'>3</span>
-          <p className='text-sm md:text-lg max-w-sm'>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. At faucibus
-            nibh faucibus aenean montes, id. Nunc nunc a vitae sollicitudin. Eu
-            eget tellus quam eget. Velit magnis amet tellus senectus venenatis,
-            tortor ipsum, in.
-          </p>
-          <p className='text-sm md:text-lg max-w-sm'>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. At faucibus
-            nibh faucibus aenean montes, id. Nunc nunc a vitae sollicitudin. Eu
-            eget tellus quam eget. Velit magnis amet tellus senectus venenatis,
-            tortor ipsum, in.
-          </p>
-          <p className='text-sm md:text-lg max-w-sm'>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. At faucibus
-            nibh faucibus aenean montes, id. Nunc nunc a vitae sollicitudin. Eu
-            eget tellus quam eget. Velit magnis amet tellus senectus venenatis,
-            tortor ipsum, in.
-          </p>
+        <div className='flex flex-col space-y-3 lg:space-y-6'>
+          <span className='uppercase text-2xl md:text-3xl font-medium'>
+            Dictatorship &amp; <br /> Inevitable Demise
+          </span>
+          <ul className='text-sm md:text-lg space-y-1 max-w-xs'>
+            <li className="flex gap-1">
+              <span>01.</span> Team expansion
+            </li>
+            <li className="flex gap-1">
+              <span>02.</span> PrettyZelensky NFT Drop
+            </li>
+            <li className="flex gap-1">
+              <span>03.</span> Game Beta Launch
+            </li>
+            <li className="flex gap-1">
+              <span>04.</span> Public events
+            </li>
+            <li className="flex gap-1">
+              <span>05.</span> NFT integration in the comics
+            </li>
+            <br />
+            <li className="flex gap-1">
+              <span>01.</span> Game release
+            </li>
+            <li className="flex gap-1">
+              <span>02.</span> Unique in-game event announcement
+            </li>
+            <li className="flex gap-1">
+              <span>03.</span> Live event visits
+            </li>
+            <li className="flex gap-1">
+              <span>04.</span> Brand building
+            </li>
+          </ul>
         </div>
       </div>
     </div>

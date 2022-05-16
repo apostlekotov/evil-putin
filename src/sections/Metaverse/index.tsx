@@ -35,16 +35,14 @@ export const Metaverse: React.FC = () => (
       </h3>
 
       <p className='text-base md:text-lg mb-4'>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ut diam
-        dictum morbi. Sit justo erat sit sit enim elit. Egestas fringilla
-        dignissim congue ridiculus aenean sem sodales semper. Mattis risus,
-        nunc, cursus lectus est et. Lorem ipsum dolor sit amet, consectetur
-        adipiscing elit. Aliquam ut diam dictum morbi. Sit justo erat sit sit
-        enim elit.
+        There will be 6660 EvilPutin NTFs that will be minted in a still frame
+        format, but with the addition of our serum drops, users will be able to
+        upgrade their NFTs to 3D ones by acquiring a serum in one of the 4
+        AirDrops for randomly selected holders.
       </p>
       <p className='text-base md:text-lg mb-6'>
-        Egestas fringilla dignissim congue ridiculus aenean sem sodales semper.
-        Mattis risus, nunc, cursus lectus est et..
+        The EP NFTs will be applicable both in our comic book and game, giving
+        them more than just their striking visual aesthetic but also utility.
       </p>
 
       <NukeLink className='flex self-start -ml-10' href='/'>
