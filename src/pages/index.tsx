@@ -10,6 +10,7 @@ import { AboutWar } from "@/sections/AboutWar";
 import { AboutUs } from "@/sections/AboutUs";
 import { Character } from "@/sections/Character";
 import { Metaverse } from "@/sections/Metaverse";
+import { Team } from "@/sections/Team";
 import { Roadmap } from "@/sections/Roadmap";
 import { FAQ } from "@/sections/FAQ";
 import { Banner } from "@/sections/Banner";
@@ -28,6 +29,7 @@ const Home: NextPage = () => (
     <Character />
     <Marquee>Stop Russian Aggression</Marquee>
     <Metaverse />
+    <Team />
     <Roadmap />
     <FAQ />
     <Banner />
