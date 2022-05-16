@@ -10,6 +10,7 @@ import Matr1Image from "@/public/img/matr1.png";
 import Matr2Image from "@/public/img/matr2.png";
 import Matr3Image from "@/public/img/matr3.png";
 import RoadmapBGImage from "@/public/img/roadmap-bg.png";
+import TeamImage from "@/public/img/team.png";
 import RescueHuilo from "@/public/img/rescue-huilo.png";
 import FooterBGImage from "@/public/img/footer-bg.png";
 
@@ -26,6 +27,7 @@ export {
   Matr2Image,
   Matr3Image,
   RoadmapBGImage,
+  TeamImage,
   RescueHuilo,
   FooterBGImage,
 };
