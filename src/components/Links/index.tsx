@@ -12,7 +12,7 @@ export const Links: React.FC<Props> = ({ links, className }) => (
       <a
         href={link.url}
         key={i}
-        className={`fill-white hover:fill-primary hover:opacity-100 transition ease-out delay-200 ${
+        className={`fill-white md:hover:fill-primary focus:fill-primary active:fill-primary md:hover:opacity-100 focus:opacity-100 active:opacity-100 transition ease-out delay-200 ${
           className || ""
         }`}
         target='_blank'

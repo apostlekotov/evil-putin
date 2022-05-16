@@ -95,7 +95,7 @@ export const Header: React.FC = () => {
             <motion.a
               custom={1}
               variants={navLinkAnimation}
-              className='uppercase hover:text-primary whitespace-nowrap transition ease-in-out delay-200'
+              className='uppercase md:hover:text-primary focus:text-primary active:text-primary whitespace-nowrap transition ease-in-out delay-200'
             >
               Metahero
             </motion.a>
@@ -104,7 +104,7 @@ export const Header: React.FC = () => {
             <motion.a
               custom={2}
               variants={navLinkAnimation}
-              className='uppercase hover:text-primary whitespace-nowrap transition ease-in-out delay-200'
+              className='uppercase md:hover:text-primary focus:text-primary active:text-primary whitespace-nowrap transition ease-in-out delay-200'
             >
               Collection
             </motion.a>
@@ -113,7 +113,7 @@ export const Header: React.FC = () => {
             <motion.a
               custom={3}
               variants={navLinkAnimation}
-              className='uppercase hover:text-primary whitespace-nowrap transition ease-in-out delay-200'
+              className='uppercase md:hover:text-primary focus:text-primary active:text-primary whitespace-nowrap transition ease-in-out delay-200'
             >
               Roadmap
             </motion.a>
@@ -122,7 +122,7 @@ export const Header: React.FC = () => {
             <motion.a
               custom={4}
               variants={navLinkAnimation}
-              className='uppercase hover:text-primary whitespace-nowrap transition ease-in-out delay-200'
+              className='uppercase md:hover:text-primary focus:text-primary active:text-primary whitespace-nowrap transition ease-in-out delay-200'
             >
               About
             </motion.a>
@@ -131,7 +131,7 @@ export const Header: React.FC = () => {
             <motion.a
               custom={5}
               variants={navLinkAnimation}
-              className='uppercase hover:text-primary whitespace-nowrap transition ease-in-out delay-200'
+              className='uppercase md:hover:text-primary focus:text-primary active:text-primary whitespace-nowrap transition ease-in-out delay-200'
             >
               FAQ
             </motion.a>

@@ -31,36 +31,36 @@ export const Footer: React.FC = () => (
       <div className='grid grid-cols-3 md:grid-cols-2 grid-rows-1 md:grid-rows-2 gap-8 md:pl-8 md:pt-16 md:absolute top-0 left-0 font-bold text-sm md:text-lg lg:text-2xl mx-auto'>
         <div className='flex flex-col space-y-4'>
           <Link href='/#metahero'>
-            <a className='uppercase hover:text-primary whitespace-nowrap transition ease-in-out delay-200'>
+            <a className='uppercase md:hover:text-primary focus:text-primary active:text-primary whitespace-nowrap transition ease-in-out delay-200'>
               Metahero
             </a>
           </Link>
           <Link href='/#'>
-            <a className='uppercase hover:text-primary whitespace-nowrap transition ease-in-out delay-200'>
+            <a className='uppercase md:hover:text-primary focus:text-primary active:text-primary whitespace-nowrap transition ease-in-out delay-200'>
               Collection
             </a>
           </Link>
         </div>
         <div className='flex flex-col space-y-4 text-right md:text-left'>
           <Link href='/#roadmap'>
-            <a className='uppercase hover:text-primary whitespace-nowrap transition ease-in-out delay-200'>
+            <a className='uppercase md:hover:text-primary focus:text-primary active:text-primary whitespace-nowrap transition ease-in-out delay-200'>
               Roadmap
             </a>
           </Link>
           <Link href='/#about'>
-            <a className='uppercase hover:text-primary whitespace-nowrap transition ease-in-out delay-200'>
+            <a className='uppercase md:hover:text-primary focus:text-primary active:text-primary whitespace-nowrap transition ease-in-out delay-200'>
               About
             </a>
           </Link>
         </div>
         <div className='flex flex-col space-y-4 text-right md:text-left'>
           <Link href='/#'>
-            <a className='uppercase hover:text-primary whitespace-nowrap transition ease-in-out delay-200'>
+            <a className='uppercase md:hover:text-primary focus:text-primary active:text-primary whitespace-nowrap transition ease-in-out delay-200'>
               Team
             </a>
           </Link>
           <Link href='/#faq'>
-            <a className='uppercase hover:text-primary whitespace-nowrap transition ease-in-out delay-200'>
+            <a className='uppercase md:hover:text-primary focus:text-primary active:text-primary whitespace-nowrap transition ease-in-out delay-200'>
               FAQ
             </a>
           </Link>
