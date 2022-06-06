@@ -49,20 +49,20 @@ export const Header: React.FC = () => {
   return (
     <header
       className={`opacity-100 fixed w-full top-0 left-0 right-0 transition-[background-color,backdrop-filter,height,padding] ease-in-out delay-200 z-10
-      ${open ? "h-full" : small ? "h-[96px] lg:h-[144px] xl:h-[160px]" : "h-0"} 
+      ${open ? "h-full" : small ? "h-[96px] lg:h-[144px]" : "h-0"} 
       ${small || open ? "opacity-100 bg-black" : ""}`}
     >
       <div
         className={`flex items-center relative w-full 2xl:max-w-screen-2xl mx-auto justify-between transition-[padding] ease-in-out delay-200 
         ${
           small && !open
-            ? "px-4 xl:px-6 py-6 md:py-8"
-            : "px-8 xl:px-8 py-8 md:py-16"
+            ? "px-4 py-6 md:py-8"
+            : "px-8 py-8 md:py-16"
         }`}
       >
         <div>
           <Link href='/'>
-            <a className='flex w-[88px] h-12 lg:w-[146px] lg:h-20 xl:w-[175px] xl:h-24'>
+            <a className='flex w-[88px] h-12 lg:w-[146px] lg:h-20'>
               <Image
                 src={LogoImage}
                 alt='evil putin logo'
