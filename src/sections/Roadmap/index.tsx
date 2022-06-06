@@ -21,56 +21,46 @@ export const Roadmap: React.FC = () => (
         <h4 className='uppercase text-8xl font-medium hidden md:block'>
           Roadmap
         </h4>
-
-        <div className='flex justify-between absolute left-0 right-0 bottom-0 translate-y-full md:translate-y-[1px] border-t md:border-b md:border-t-0 border-t-black md:border-b-black py-1 mx-4 md:mx-8 2xl:mx-0'>
-          <div className='flex items-baseline md:space-x-2'>
-            <div className='bg-black w-[18px] h-[18px] hidden md:block'></div>
-            <span className='uppercase text-base md:text-2xl'>24.02.2022</span>
-          </div>
-
-          <div className='flex items-baseline space-x-2'>
-            <div className='bg-black w-3 h-3 md:w-[18px] md:h-[18px]'></div>
-            <span className='uppercase text-base md:text-2xl'>Till now</span>
-          </div>
-        </div>
       </div>
     </div>
+
+    <hr className='border-t-black py-1' />
 
     <div className='w-full h-full 2xl:max-w-screen-2xl mx-auto px-4 md:px-8 2xl:px-0 pt-8 pb-20 md:pb-40'>
       <span className='uppercase text-6xl font-medium block md:hidden mt-4'>
         Roadmap
       </span>
 
-      <p className='text-sm md:text-lg max-w-md md:max-w-3xl mt-8 md:mt-0'>
+      {/* <p className='text-sm lg:text-xl max-w-md md:max-w-3xl mt-8 md:mt-0'>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. At faucibus
         nibh faucibus aenean montes, id. Nunc nunc a vitae sollicitudin. Eu eget
         tellus quam eget. Velit magnis amet tellus senectus venenatis, tortor
         ipsum, in.
-      </p>
+      </p> */}
 
-      <div className='flex flex-col lg:flex-row justify-start gap-12 mt-16'>
-        <div className='grid grid-cols-2 grid-rows-2 gap-6 lg:gap-12 mb-auto'>
+      <div className='flex flex-col lg:flex-row justify-start gap-y-12 gap-x-16 mt-16'>
+        <div className='grid grid-cols-2 grid-rows-2 gap-x-6 gap-y-6 lg:gap-y-12 lg:gap-x-16 mb-auto'>
           <div className='flex flex-col space-y-3 lg:space-y-6'>
             <span className='uppercase text-2xl md:text-3xl font-medium'>
               Birth
             </span>
-            <ul className='text-sm md:text-lg space-y-1 max-w-xs'>
-              <li className="flex gap-1">
+            <ul className='text-sm lg:text-xl space-y-1 max-w-md'>
+              <li className='flex gap-1'>
                 <span>01.</span> Team expansion
               </li>
-              <li className="flex gap-1">
+              <li className='flex gap-1'>
                 <span>02.</span> Material Building
               </li>
-              <li className="flex gap-1">
+              <li className='flex gap-1'>
                 <span>03.</span> EvilPutin NFT Creation
               </li>
-              <li className="flex gap-1">
+              <li className='flex gap-1'>
                 <span>04.</span> Website creation
               </li>
-              <li className="flex gap-1">
+              <li className='flex gap-1'>
                 <span>05.</span> Marketing strategy development
               </li>
-              <li className="flex gap-1">
+              <li className='flex gap-1'>
                 <span>06.</span> Partnership plan development
               </li>
             </ul>
@@ -79,23 +69,23 @@ export const Roadmap: React.FC = () => (
             <span className='uppercase text-2xl md:text-3xl font-medium'>
               Childhood
             </span>
-            <ul className='text-sm md:text-lg space-y-1 max-w-xs'>
-              <li className="flex gap-1">
+            <ul className='text-sm lg:text-xl space-y-1 max-w-md'>
+              <li className='flex gap-1'>
                 <span>01.</span> Social media establishment
               </li>
-              <li className="flex gap-1">
+              <li className='flex gap-1'>
                 <span>02.</span> Marketing efforts
               </li>
-              <li className="flex gap-1">
+              <li className='flex gap-1'>
                 <span>03.</span> Establishing partners
               </li>
-              <li className="flex gap-1">
+              <li className='flex gap-1'>
                 <span>04.</span> Website launch
               </li>
-              <li className="flex gap-1">
+              <li className='flex gap-1'>
                 <span>05.</span> EvilPutin NFT Mint
               </li>
-              <li className="flex gap-1">
+              <li className='flex gap-1'>
                 <span>06.</span> Donation to Ukraine
               </li>
             </ul>
@@ -104,23 +94,23 @@ export const Roadmap: React.FC = () => (
             <span className='uppercase text-2xl md:text-3xl font-medium'>
               Years in the KGB
             </span>
-            <ul className='text-sm md:text-lg space-y-1 max-w-xs'>
-              <li className="flex gap-1">
+            <ul className='text-sm lg:text-xl space-y-1 max-w-md'>
+              <li className='flex gap-1'>
                 <span>01.</span> 1st Serum Airdrop
               </li>
-              <li className="flex gap-1">
+              <li className='flex gap-1'>
                 <span>02.</span> Comic Development begins
               </li>
-              <li className="flex gap-1">
+              <li className='flex gap-1'>
                 <span>03.</span> Partnership Expansion
               </li>
-              <li className="flex gap-1">
+              <li className='flex gap-1'>
                 <span>04.</span> 2nd Serum Drop
               </li>
-              <li className="flex gap-1">
-                <span>05.</span> Metaverse Parcel Purchase for the community 
+              <li className='flex gap-1'>
+                <span>05.</span> Metaverse Parcel Purchase for the community
               </li>
-              <li className="flex gap-1">
+              <li className='flex gap-1'>
                 <span>06.</span> Website V2.0
               </li>
             </ul>
@@ -129,20 +119,20 @@ export const Roadmap: React.FC = () => (
             <span className='uppercase text-2xl md:text-3xl font-medium'>
               Becoming President
             </span>
-            <ul className='text-sm md:text-lg space-y-1 max-w-xs'>
-              <li className="flex gap-1">
+            <ul className='text-sm lg:text-xl space-y-1 max-w-md'>
+              <li className='flex gap-1'>
                 <span>01.</span> 3rd Serum Drop
               </li>
-              <li className="flex gap-1">
+              <li className='flex gap-1'>
                 <span>02.</span> Comic launch
               </li>
-              <li className="flex gap-1">
+              <li className='flex gap-1'>
                 <span>03.</span> Community Live Events
               </li>
-              <li className="flex gap-1">
+              <li className='flex gap-1'>
                 <span>04.</span> 4th and Last Serum Drop
               </li>
-              <li className="flex gap-1">
+              <li className='flex gap-1'>
                 <span>05.</span> Start of game development
               </li>
             </ul>
@@ -153,33 +143,33 @@ export const Roadmap: React.FC = () => (
           <span className='uppercase text-2xl md:text-3xl font-medium'>
             Dictatorship &amp; <br /> Inevitable Demise
           </span>
-          <ul className='text-sm md:text-lg space-y-1 max-w-xs'>
-            <li className="flex gap-1">
+          <ul className='text-sm lg:text-xl space-y-1 max-w-md'>
+            <li className='flex gap-1'>
               <span>01.</span> Team expansion
             </li>
-            <li className="flex gap-1">
+            <li className='flex gap-1'>
               <span>02.</span> PrettyZelensky NFT Drop
             </li>
-            <li className="flex gap-1">
+            <li className='flex gap-1'>
               <span>03.</span> Game Beta Launch
             </li>
-            <li className="flex gap-1">
+            <li className='flex gap-1'>
               <span>04.</span> Public events
             </li>
-            <li className="flex gap-1">
+            <li className='flex gap-1'>
               <span>05.</span> NFT integration in the comics
             </li>
             <br />
-            <li className="flex gap-1">
+            <li className='flex gap-1'>
               <span>01.</span> Game release
             </li>
-            <li className="flex gap-1">
+            <li className='flex gap-1'>
               <span>02.</span> Unique in-game event announcement
             </li>
-            <li className="flex gap-1">
+            <li className='flex gap-1'>
               <span>03.</span> Live event visits
             </li>
-            <li className="flex gap-1">
+            <li className='flex gap-1'>
               <span>04.</span> Brand building
             </li>
           </ul>
