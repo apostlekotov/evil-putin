@@ -25,7 +25,7 @@ export const AboutUs: React.FC = () => (
         aim to use the power of crypto and the communities within it to raise
         funds for Ukraine. We strive for peace in Ukraine and for a life without
         fear in our country. With every MANW NFT transaction, you will directly
-        support Ukraine and its people which will directly receive 60% of the
+        support Ukraine and its people which will directly receive 50% of the
         minting fee. This will happen automatically through our contract and
         will immediately be redirected to Ukraine’s official donation wallet.
       </p>

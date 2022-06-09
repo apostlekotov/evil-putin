@@ -35,7 +35,7 @@ export const Metaverse: React.FC = () => (
       </h3>
 
       <p className='text-base md:text-lg mb-4'>
-        There will be 6660 EvilPutin NTFs that will be minted in a still frame
+        There will be 7777 EvilPutin NTFs that will be minted in a still frame
         format, but with the addition of our serum drops, users will be able to
         upgrade their NFTs to 3D ones by acquiring a serum in one of the 4
         AirDrops for randomly selected holders.
