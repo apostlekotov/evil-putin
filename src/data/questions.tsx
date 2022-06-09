@@ -13,7 +13,7 @@ export const questions: Question[] = [
   },
   {
     question: "Who did the art for EP?",
-    answer: "The art was done by a design studio in Ukraine: ___________",
+    answer: "The art was done by a design studio in Ukraine",
   },
   {
     question: "When is The EP Mint?",
